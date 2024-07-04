@@ -13,9 +13,9 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 		System.out.println("ah papa como no ");
-		Usuario usuarioDemo = new Usuario();
+		usuarioRepository.Usuario usuarioDemo = new usuarioRepository.Usuario();
 
-		Usuario user = repository.findById(1L).get();
+		usuarioRepository.Usuario user = repository.findById(1L).get();
 
 		if (user != null){
 
